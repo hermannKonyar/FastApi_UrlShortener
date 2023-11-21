@@ -19,9 +19,9 @@ Projeyi izole bir ortamda çalıştırmak için Python sanal ortamı oluşturun:
 
 bash
 Copy code
-'''python -m venv venv
+```python -m venv venv
 source venv/bin/activate  # Unix veya MacOS için
-venv\Scripts\activate     # Windows için '''
+venv\Scripts\activate     # Windows için ```
 2. Bağımlılıkları Yükleme:
 Projede kullanılan bağımlılıkları yükleyin:
 
