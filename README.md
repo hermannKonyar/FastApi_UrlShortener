@@ -47,6 +47,7 @@ POST isteği ile /shorten/ endpoint'ine uzun bir URL gönderilir ve kısaltılm�
 
 bash
 Copy code
+```
 curl -X 'POST' \
   'http://127.0.0.1:8000/shorten/' \
   -H 'accept: application/json' \
