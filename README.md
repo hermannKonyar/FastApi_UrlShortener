@@ -21,20 +21,25 @@ bash
 Copy code
 ```python -m venv venv
 source venv/bin/activate  # Unix veya MacOS için
-venv\Scripts\activate     # Windows için ```
+venv\Scripts\activate     # Windows için
+```
 2. Bağımlılıkları Yükleme:
 Projede kullanılan bağımlılıkları yükleyin:
 
 bash
 Copy code
+```
 pip install -r requirements.txt
+```
 3. Uygulamayı Çalıştırma:
 Uygulamayı başlatmak için aşağıdaki komutu kullanın:
 
 bash
 Copy code
+```
 uvicorn main:app --reload
-Uygulama http://127.0.0.1:8000 adresinde çalışır.
+```
+Uygulama http://127.0.0.1:8000/docs adresinde çalışır.
 
 # Kullanım
 URL Kısaltma:
@@ -47,6 +52,7 @@ curl -X 'POST' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'url=https://www.example.com'
+  ```
 Kısaltılmış URL'ye Erişim:
 Kısaltılmış URL'ye gidildiğinde, otomatik olarak orijinal URL'ye yönlendirilirsiniz.
 
@@ -55,4 +61,6 @@ Uygulamanın doğru çalıştığından emin olmak için entegre testleri çalı
 
 bash
 Copy code
+```
 pytest test_main.py
+```
